@@ -63,8 +63,24 @@ body{
 .one{
     font-weight: bolder;
 }
-.two{
+
+.formulaire{
+    
     height: 30vh;
     background-color: blueviolet;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
 }
+
+.block2{
+    display: flex;
+    flex-direction: row;
+}
+.colonne1,.colonne2{
+    margin: 20px;
+    align-content:space-between;
+}
+caption{
+    margin-bottom: 10px;
+}
+
