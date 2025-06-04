@@ -18,5 +18,53 @@ body{
     flex-direction: row;
     margin-right: 10px;
     padding: 0%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.graphics{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaves{
+    height: 100vh;
+    opacity: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.blanck{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 50%;
+    width: 30.3%;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+.logo{
+    height:100%;
+}
+.brand{
+    font-size: 32px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.one{
+    font-weight: bolder;
+}
+.two{
+    height: 30vh;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+}
