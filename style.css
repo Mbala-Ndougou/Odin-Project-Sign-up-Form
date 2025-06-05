@@ -5,7 +5,7 @@ html{
 
 body{
     height: 100%;
-    
+    font-family: sans-serif;
 }
 
 .container{
@@ -16,10 +16,13 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    
     padding: 0%;
     justify-content: space-evenly;
     align-items: center;
+    background-color: rgba(240, 240, 240, 0.938)
+
 }
 
 .graphics{
@@ -58,18 +61,40 @@ body{
 .contents{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    background-color: rgba(240, 240, 240, 0.938)
 }
 .one{
     font-weight: bolder;
 }
+.one,.two,.three,.formulaire{
+    padding: 3%
+    /* margin-left: 10px; */
+}
+/* .one,.three{
+    height: auto;
+} */
 
+caption{
+    font-weight: ;
+    color: ;
+}
+label{
+    display: block;
+    margin-top: 5px;
+}
+input{
+    width: 150px;
+}
 .formulaire{
     
     height: 30vh;
-    background-color: blueviolet;
+    /* background-color: rgb(109, 52, 161); */
     align-items: center;
-    padding: 10px;
+    background-color: white;
+    box-shadow: inset;
+    height: auto;
+    box-shadow: 20px 5px 5px rgb(206, 206, 206);
 }
 
 .block2{
@@ -77,10 +102,47 @@ body{
     flex-direction: row;
 }
 .colonne1,.colonne2{
-    margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
     align-content:space-between;
 }
 caption{
     margin-bottom: 10px;
 }
+button{
+    border: solid rgba(96, 139, 91, 0.719) 1px;
+    border-radius: 5px;
+    background-color: rgba(53, 126, 51, 0.767);
+    height: 40px;
+    width: 180px;
+    font-weight: bold;
+    color: white;
+}
+.login{
+    font-weight: bold;
+}
+.login P{
+    color:rgba(10, 24, 9, 0.767)
+}
+a{
+    color: rgba(53, 126, 51, 0.767);
+    text-decoration: none;
+}
+label{
+    font-size: 10px;
+    color: rgb(206, 206, 206) solid 0.25px;   
+    text-transform: uppercase;
+}
+input{
+    margin-top: 5px;
+    border-radius: 3px;
+    border: rgb(206, 206, 206) solid 0.25px;
+    height: 22px;
+    width: 200px;
+}
+legend{
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+}
+
 
