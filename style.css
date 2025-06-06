@@ -1,3 +1,5 @@
+ @import url(https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold); 
+
 html{
     min-height: 100%;
     position: relative;
@@ -17,9 +19,9 @@ body{
     display: flex;
     flex-direction: row;
     /* margin-right: 10px; */
-    
+    width: 100vw;
     padding: 0%;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     background-color: rgba(240, 240, 240, 0.938)
 
@@ -27,35 +29,62 @@ body{
 
 .graphics{
     position: relative;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    width: 30vw;
+    bottom: 0;
 }
-
+/* .image-wrapper{
+    position: relative;
+    width: 35%;
+} */
 .leaves{
     height: 100vh;
-    opacity: 50%;
+    /* opacity: 50%; */
     position: relative;
+    overflow: hidden;
     top: 0;
+    bottom: 100;
     left: 0;
+    width: 30vw;
 }
 .blanck{
     display: flex;
+    flex: 2 0 auto
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background-color: black;
-    opacity: 50%;
-    width: 30.3%;
-    height: 80px;
+    /* opacity: 45%; */
+    width: 100%;
+    height: 90px;
     position: absolute;
-    top: 200px;
+    top: 24%;
     left: 0;
 }
+.transp{
+    align-self:center;
+     width: 100%;
+     height: 90px;
+     position: absolute;
+     /* top: 40%; */
+     left: 0;
+     background-color: black;
+     opacity: 35%;
+}
 .logo{
-    height:100%;
+    height:120%;
+    align-self: center;
 }
 .brand{
-    font-size: 32px;
+    font-size: 70px;
+    font-family: "Norse Bold"; 
+    color: white;
+    align-self: center;
+
+}
+
+.logo,.brand{
+    /* position: relative; */
+    z-index: 1;
 }
 
 .contents{
@@ -66,6 +95,8 @@ body{
 }
 .one{
     font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .one,.two,.three,.formulaire{
     padding: 3%
@@ -88,13 +119,15 @@ input{
 }
 .formulaire{
     
-    height: 30vh;
+    height: 25vh;
     /* background-color: rgb(109, 52, 161); */
     align-items: center;
     background-color: white;
     box-shadow: inset;
     height: auto;
+    width: 100vw;
     box-shadow: 20px 5px 5px rgb(206, 206, 206);
+    padding: 6;
 }
 
 .block2{
@@ -118,9 +151,14 @@ button{
     font-weight: bold;
     color: white;
 }
+button:hover{
+    background-color: rgba(82, 156, 80, 0.767);
+    cursor: pointer;
+}
 .login{
     font-weight: bold;
 }
+
 .login P{
     color:rgba(10, 24, 9, 0.767)
 }
